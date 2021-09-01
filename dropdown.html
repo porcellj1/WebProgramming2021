@@ -6,15 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Information</title>
     <style>
-
+        nav {
+            background-color: aqua;
+        }
+        .navOption {
+            font-size: x-large;
+            padding: 20px;
+        }
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        select, input {margin: 5px;}
     </style>
 </head>
 <body>
+    <nav>
+        <span class="navOption">Home</span>
+        <span class="navOption">Profile</span>
+        <span class="navOption">Log</span>
+            <!--activity, weight, food-->
+        <span class="navOption">Progress Tracking</span>
+            <!--summary, graph, goals-->
+    </nav>
+
     <h1>Profile Information</h1>
     <label for="name">Name: </label>
     <input type="text" id="name"><br>
 
-     <!--make gender and pronouns a dropdown menu w css-->
     <label for="gender">Gender: </label>
     <select name="gender" id="gender">
         <option>Prefer Not to Respond</option>
