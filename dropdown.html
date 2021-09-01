@@ -4,18 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown Practice</title>
+    <title>Profile Information</title>
+    <style>
+
+    </style>
 </head>
 <body>
-    <label for="exerciseType">Choose your exercise: </label>
-    <select name="type" id="exerciseType">
-        <option>Running</option>
-        <option>Hiking</option>
-        <option>Backpacking</option>
-        <option>Weight Lifting</option>
-        <option>Martial Arts</option>
-        <option>Swimming</option>
-        <option>Cardio Machine</option>
-    </select>
+    <h1>Profile Information</h1>
+    <label for="name">Name: </label>
+    <input type="text" id="name"><br>
+
+     <!--make gender and pronouns a dropdown menu w css-->
+    <label for="gender">Gender: </label>
+    <select name="gender" id="gender">
+        <option>Prefer Not to Respond</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Nonbinary/Other</option>
+    </select><br>
+    <label for="pronouns">Pronouns: </label>
+    <select name="pronouns">
+        <option>she/her/hers</option>
+        <option>he/him/his</option>
+        <option>they/them/theirs</option>
+        <option>refer to me by my name</option>
+    </select><br><br>
+
+    <label for="int">What are your interests?</label><br>
+    <form id="int">
+        <input type="checkbox" name="interests" id="hiking">
+        <label for="hiking">hiking</label><br>
+        <input type="checkbox" name="interests" id="running">
+        <label for="running">running</label><br>
+        <input type="checkbox" name="interests" id="lifting">
+        <label for="lifting">weight lifting</label><br>
+        <input type="checkbox" name="interests" id="mma">
+        <label for="mma">martial arts</label><br>
+        <input type="checkbox" name="interests" id="swimming">
+        <label for="swimming">swimming</label>
+    </form>
+    
 </body>
 </html>
