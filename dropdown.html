@@ -7,26 +7,64 @@
     <title>Profile Information</title>
     <style>
         nav {
+            width: 50%;
             background-color: aqua;
         }
-        .navOption {
-            font-size: x-large;
-            padding: 20px;
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdownContent {
+            position: absolute;
+            display: none;
+            background-color: wheat;
         }
         * {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         select, input {margin: 5px;}
+        body {background-color: bisque;}
+        button {
+            height: 10px;
+            border: none;
+            background-color: transparent;
+            font-size: x-large;
+            padding: 30px;
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown:hover .dropdownContent {
+            display: block;
+            position: absolute;
+        }
+        li {
+            list-style: none;
+        }
+        ul:hover {
+            background-color: sienna;
+        }
     </style>
 </head>
 <body>
     <nav>
-        <span class="navOption">Home</span>
-        <span class="navOption">Profile</span>
-        <span class="navOption">Log</span>
-            <!--activity, weight, food-->
-        <span class="navOption">Progress Tracking</span>
-            <!--summary, graph, goals-->
+        <button>Home</button>
+        <button>Profile</button>
+        <div class="dropdown">
+            <button>Log</button>
+            <li class="dropdownContent">
+                <ul>Activity</ul>
+                <ul>Weight</ul>
+                <ul>Food</ul>
+            </li>
+        </div>
+        <div class="dropdown">
+            <button>Progress Tracking</button>
+            <li class="dropdownContent">
+                <ul>Summary</ul>
+                <ul>Graph</ul>
+                <ul>Goals</ul>
+            </li>
+        </div>
     </nav>
 
     <h1>Profile Information</h1>
